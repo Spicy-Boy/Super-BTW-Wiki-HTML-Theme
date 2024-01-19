@@ -1,8 +1,24 @@
 /* This style is for debug purposes, highlights the boxes!*/
 header, footer, nav, main, footer, .main, .left-sidebar, .wrapper, .wrapper-excluding-sidebar {
     border: 4px dashed orange;
-    margin: 10px; 
-    padding: 10px;
+    margin: 5px; 
+    padding: 5px;
+}
+
+body {
+    font-family: "Liberation Sans",Arial,Helvetica,sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+#FC a:hover {
+    color: red;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .wrapper{
@@ -12,6 +28,10 @@ header, footer, nav, main, footer, .main, .left-sidebar, .wrapper, .wrapper-excl
 
 .wrapper-excluding-sidebar {
     margin-left: 10em;
+
+    /*matches the Minecraft.wiki*/
+    font-size: calc(1em * 0.875);
+    line-height: 1.6;
 }
 
 .left-sidebar {
@@ -19,11 +39,51 @@ header, footer, nav, main, footer, .main, .left-sidebar, .wrapper, .wrapper-excl
     top: 0;
     left: 0;
 
-    padding-top: 0;
+    /* padding-top: 0; */
     padding-bottom: 10px;
     width: 9em;
 }
 
+#wiki-logo img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+#search-bar{
+    text-align: right;
+}
+
+.nav-horizontal ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-horizontal li {
+    display: inline-block;
+}
+
+.container-icons {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: center;
+}
+.icon-individual {
+    /* background-color: red; */
+
+    margin: 10px;
+
+    text-align: center;
+    flex: 0 0 auto;
+    width: 90px;
+}
+.icon-individual img {
+    width: 60;
+    height: 60;
+    border: 0;
+    vertical-align: middle;
+}
 
 
 /* when screen is less than a certain amount of px VVV */
@@ -37,6 +97,7 @@ header, footer, nav, main, footer, .main, .left-sidebar, .wrapper, .wrapper-excl
         margin-left: 0;
     }
 
+    /* this places the sidebar beneath the main content when squeezed */
     .left-sidebar {
         position: relative;
 
