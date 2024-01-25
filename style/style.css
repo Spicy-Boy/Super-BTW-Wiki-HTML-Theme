@@ -83,6 +83,10 @@ a:hover {
 .limited {
     max-width: 800px;
 }
+.limited-675px {
+    /* max-width: 675px; */
+    flex-basis: 675px;
+}
 .description-large p{
     font-size: 1.25em;
 }
@@ -99,10 +103,10 @@ a:hover {
 .icon-container {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 20px;
+    row-gap: 10px;
     justify-content: center;
 
-    padding: 2px;
+    padding-top: 5px;
     margin: 5px 15px 5px 15px;
 
     /* max-width: 700px; */
@@ -112,11 +116,12 @@ a:hover {
 .icon-individual {
     /* background-color: red; */
 
-    margin: 10px;
+    /* margin: 0 10px 0 10px; */
 
     text-align: center;
     /* flex: 0 0 auto; */
     width: 90px;
+    /* height: 109.8px; */
 }
 .icon-individual img {
     width: 60px;
@@ -125,6 +130,11 @@ a:hover {
     vertical-align: middle;
     
     padding-bottom: 5px;
+}
+.icon-individual a {
+    /* padding: 0;
+    margin: 0; */
+    /* line-height: 1; */
 }
 
 
