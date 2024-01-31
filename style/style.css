@@ -5,10 +5,10 @@ header, footer, nav, main, footer, .main, .left-sidebar, .wrapper, .wrapper-excl
     padding: 5px;
 }
 /* DEBUG DIV BORDERS */
-.icon-container, .centered {
+/* .icon-container, .centered {
     border: 4px dashed purple;
     padding: 5px;
-}
+} */
 
 body {
     font-family: "Liberation Sans",Arial,Helvetica,sans-serif;
@@ -99,6 +99,15 @@ a:hover {
     display: flex;
     justify-content: center;
 }
+
+fieldset {
+    border-style: double;
+}
+legend {
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
 /* contains the cute little icons in a flex box */
 .icon-container {
     display: flex;
